@@ -27,42 +27,36 @@ body {
   transition: all 0.3s ease;
 }
 
-.header-content {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  margin-bottom: 30px;
-  gap: 20px;
-  min-height: 60px;
-}
-
-.author-name {
-  grid-column: 3;
-  justify-self: end;
-  color: var(--secondary-color, #66382A);
-  font-family: 'Exo 2', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  opacity: 0.8;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-.author-name:hover {
-  opacity: 1;
-  color: var(--primary-color, #724817);
-}
-
 .App-header h1 {
-  grid-column: 2;
-  justify-self: center;
   color: var(--text-color, #39211B);
-  margin: 0;
+  margin-bottom: 30px;
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   font-family: 'Exo 2', sans-serif;
   transition: color 0.3s ease;
+  text-align: center;
+}
+
+.app-footer {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(114, 72, 23, 0.3);
+  text-align: center;
+}
+
+.author-credit {
+  color: var(--secondary-color, #66382A);
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.author-credit:hover {
+  opacity: 1;
+  color: var(--primary-color, #724817);
 }
 
 .app-container {
@@ -175,36 +169,18 @@ body {
   }
 }
 
-@media (max-width: 900px) {
-  .header-content {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
-  
-  .author-name {
-    font-size: 0.95rem;
-  }
-}
-
 @media (max-width: 768px) {
   .App-header {
     padding: 20px;
     margin: 10px;
   }
   
-  .header-content {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-  
   .App-header h1 {
     font-size: 2rem;
   }
   
-  .author-name {
-    font-size: 0.9rem;
+  .author-credit {
+    font-size: 0.85rem;
   }
   
   .app-actions {

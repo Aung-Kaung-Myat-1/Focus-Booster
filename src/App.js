@@ -146,10 +146,7 @@ function App() {
     <div className="App">
 
       <header className="App-header">
-        <div className="header-content">
-          <h1>Welcome to Focus Booster!</h1>
-          <div className="author-name">Aung Kaung Myat</div>
-        </div>
+        <h1>Welcome to Focus Booster!</h1>
         <div className="app-container">
           <AmbientSoundPlayer onThemeChange={handleThemeChange} />
           <DailyGoal onGoalComplete={handleGoalComplete} />
@@ -199,9 +196,13 @@ function App() {
             <button onClick={() => setShowDataExporter(true)} className="btn btn-export-data">
               <FaDownload /><span>Export Data</span>
             </button>
-          </div>
-        </div>
-      </header>
+                     </div>
+         </div>
+         
+         <div className="app-footer">
+           <div className="author-credit">Created by Aung Kaung Myat</div>
+         </div>
+       </header>
       
       <MoodTracker showMoodPrompt={showMoodPrompt} onMoodSubmit={handleMoodSubmit} onClose={() => setShowMoodPrompt(false)} />
       <DistractionLogger showDistractionPrompt={showDistractionPrompt} onDistractionSubmit={handleDistractionSubmit} onClose={() => setShowDistractionPrompt(false)} />
