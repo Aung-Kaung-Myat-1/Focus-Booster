@@ -33,18 +33,22 @@ body {
   align-items: center;
   margin-bottom: 30px;
   position: relative;
+  min-height: 60px;
+  padding: 0 120px;
 }
 
 .author-name {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
+  transform: translateY(-50%);
   color: var(--secondary-color, #66382A);
   font-family: 'Exo 2', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   opacity: 0.8;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .author-name:hover {
