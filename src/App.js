@@ -147,7 +147,7 @@ function App() {
 
       <header className="App-header">
         <div className="header-content">
-          <h1>Welcome to Focus Booster!</h1>
+          <h1>Welcome to Focus Booster! 🎯</h1>
           <div className="author-name">Aung Kaung Myat</div>
         </div>
         <div className="app-container">
