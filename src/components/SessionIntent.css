@@ -1,0 +1,215 @@
+.session-intent {
+  background: var(--card-background, rgba(226, 199, 161, 0.9));
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(57, 33, 27, 0.15);
+  border: 2px solid var(--primary-color, #724817);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  min-height: 450px;
+}
+
+/* Full width when in session-intent-row */
+.session-intent-row .session-intent {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.intent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--primary-color, #724817);
+  padding-bottom: 15px;
+}
+
+.intent-header h3 {
+  color: var(--text-color, #39211B);
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
+}
+
+.intent-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit-intent,
+.btn-save-intent,
+.btn-cancel-intent,
+.btn-clear-intent {
+  background: var(--primary-color, #724817);
+  border: 1px solid var(--primary-color, #724817);
+  color: var(--card-background, #E2C7A1);
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+}
+
+.btn-edit-intent:hover,
+.btn-save-intent:hover {
+  background: var(--accent-color, #606941);
+  color: var(--card-background, #E2C7A1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(96, 105, 65, 0.3);
+}
+
+.btn-cancel-intent:hover,
+.btn-clear-intent:hover {
+  background: #dc3545;
+  color: white;
+  border-color: #dc3545;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+.intent-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intent-question {
+  color: var(--text-color, #39211B);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Outfit', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.intent-textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--primary-color, #724817);
+  border-radius: 8px;
+  background: var(--card-background, #E2C7A1);
+  color: var(--text-color, #39211B);
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+  resize: vertical;
+  min-height: 100px;
+  transition: all 0.3s ease;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.intent-textarea:focus {
+  outline: none;
+  border-color: var(--accent-color, #606941);
+  box-shadow: 0 0 0 3px rgba(96, 105, 65, 0.2);
+}
+
+.btn-suggest-intent {
+  background: var(--accent-color, #606941);
+  color: var(--card-background, #E2C7A1);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.btn-suggest-intent:hover {
+  background: var(--primary-color, #724817);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(114, 72, 23, 0.3);
+}
+
+.intent-display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.intent-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.intent-icon {
+  font-size: 3rem;
+  color: var(--accent-color, #606941);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.intent-text {
+  color: var(--text-color, #39211B);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-family: 'Outfit', sans-serif;
+  transition: color 0.3s ease;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.btn-set-intent {
+  background: var(--accent-color, #606941);
+  color: var(--card-background, #E2C7A1);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Outfit', sans-serif;
+  margin-top: 15px;
+}
+
+.btn-set-intent:hover {
+  background: var(--primary-color, #724817);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(114, 72, 23, 0.3);
+}
+
+@media (max-width: 768px) {
+  .session-intent {
+    padding: 20px;
+  }
+  
+  .intent-textarea {
+    min-height: 80px;
+  }
+  
+  .intent-icon {
+    font-size: 2.5rem;
+  }
+  
+  .intent-text {
+    font-size: 1rem;
+  }
+} 

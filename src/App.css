@@ -1,0 +1,173 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: var(--app-background, linear-gradient(135deg, #39211B 0%, #66382A 50%, #724817 100%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.App-header {
+  background: var(--card-background, rgba(226, 199, 161, 0.95));
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(57, 33, 27, 0.2);
+  max-width: 1200px;
+  width: 100%;
+  border: 2px solid var(--primary-color, #724817);
+  transition: all 0.3s ease;
+}
+
+.App-header h1 {
+  color: var(--text-color, #39211B);
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-family: 'Exo 2', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* First row: Focus Timer + Productivity Score */
+.timer-productivity-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch; /* Changed to stretch for equal heights */
+}
+
+/* Second row: Todo List + Session Tag */
+.todo-session-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch; /* Changed to stretch for equal heights */
+}
+
+.session-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Third row: Session Intent (full width) */
+.session-intent-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.session-sound-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.app-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-analytics,
+.btn-summary,
+.btn-calendar,
+.btn-distractions,
+.btn-export-data {
+  background: var(--primary-color, #724817);
+  color: var(--card-background, #E2C7A1);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-analytics:hover,
+.btn-summary:hover,
+.btn-calendar:hover,
+.btn-distractions:hover,
+.btn-export-data:hover {
+  background: var(--secondary-color, #66382A);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-analytics svg,
+.btn-summary svg,
+.btn-calendar svg,
+.btn-distractions svg,
+.btn-export-data svg {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1200px) {
+  .timer-productivity-row,
+  .todo-session-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .App-header h1 {
+    font-size: 2rem;
+  }
+  
+  .app-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-analytics,
+  .btn-summary,
+  .btn-calendar,
+  .btn-distractions,
+  .btn-export-data {
+    width: 100%;
+    max-width: 200px;
+  }
+}

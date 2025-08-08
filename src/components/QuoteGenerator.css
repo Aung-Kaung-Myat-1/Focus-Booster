@@ -1,0 +1,82 @@
+.quote-generator {
+  background: var(--card-background, rgba(226, 199, 161, 0.9));
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(57, 33, 27, 0.15);
+  border: 2px solid var(--primary-color, #724817);
+  transition: all 0.3s ease;
+}
+
+.quote-generator h3 {
+  color: var(--text-color, #39211B);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.quote-container {
+  margin-bottom: 25px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  color: var(--text-color, #66382A);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  padding: 0;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.quote-author {
+  color: var(--accent-color, #606941);
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  transition: color 0.3s ease;
+}
+
+.loading {
+  color: var(--accent-color, #606941);
+  font-size: 1.1rem;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+.btn-new-quote {
+  background: var(--primary-color, #724817);
+  color: var(--card-background, #E2C7A1);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.btn-new-quote:hover {
+  background: var(--secondary-color, #39211B);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .quote-generator {
+    padding: 20px;
+  }
+  
+  .quote-text {
+    font-size: 1.1rem;
+  }
+  
+  .quote-container {
+    min-height: 100px;
+  }
+} 

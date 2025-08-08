@@ -1,0 +1,88 @@
+.break-recommender {
+  background: var(--card-background, rgba(226, 199, 161, 0.9));
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(57, 33, 27, 0.15);
+  border: 2px solid var(--primary-color, #724817);
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.break-recommender h3 {
+  color: var(--text-color, #39211B);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.recommendation-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  border: 1px solid var(--primary-color, #724817);
+  transition: all 0.3s ease;
+}
+
+.recommendation-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.recommendation-content {
+  flex: 1;
+}
+
+.recommendation-content h4 {
+  color: var(--text-color, #39211B);
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.recommendation-content p {
+  color: var(--text-color, #66382A);
+  margin: 0 0 8px 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.duration {
+  color: var(--accent-color, #606941);
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: rgba(96, 105, 65, 0.2);
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .break-recommender {
+    padding: 15px;
+  }
+  
+  .recommendation-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .recommendation-icon {
+    font-size: 2rem;
+  }
+  
+  .recommendation-content h4 {
+    font-size: 1rem;
+  }
+  
+  .recommendation-content p {
+    font-size: 0.85rem;
+  }
+} 

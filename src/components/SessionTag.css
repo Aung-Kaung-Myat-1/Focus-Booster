@@ -1,0 +1,142 @@
+.session-tag {
+  background: var(--card-background, rgba(226, 199, 161, 0.9));
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(57, 33, 27, 0.15);
+  border: 2px solid var(--primary-color, #724817);
+  transition: all 0.3s ease;
+  min-height: 450px;
+}
+
+.session-tag h3 {
+  color: var(--text-color, #39211B);
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.tag-subtitle {
+  color: var(--text-color, #66382A);
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.tag-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag-option {
+  padding: 10px 12px;
+  border: 2px solid var(--primary-color, #724817);
+  border-radius: 8px;
+  background: var(--card-background, #E2C7A1);
+  color: var(--text-color, #39211B);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.tag-option:hover {
+  background: var(--primary-color, #724817);
+  color: var(--card-background, #E2C7A1);
+  transform: translateY(-2px);
+}
+
+.tag-option.selected {
+  background: var(--accent-color, #606941);
+  color: var(--card-background, #E2C7A1);
+  border-color: var(--accent-color, #606941);
+}
+
+.custom-tag-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.custom-tag-field {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid var(--primary-color, #724817);
+  border-radius: 6px;
+  background: var(--card-background, #E2C7A1);
+  color: var(--text-color, #39211B);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.custom-tag-field:focus {
+  outline: none;
+  border-color: var(--accent-color, #606941);
+  box-shadow: 0 0 0 2px rgba(96, 105, 65, 0.2);
+}
+
+.btn-submit-tag {
+  background: var(--accent-color, #606941);
+  color: var(--card-background, #E2C7A1);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-submit-tag:hover {
+  background: var(--primary-color, #724817);
+  transform: translateY(-2px);
+}
+
+.selected-tag-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: rgba(96, 105, 65, 0.2);
+  border-radius: 8px;
+  border: 1px solid #606941;
+}
+
+.selected-tag-label {
+  color: #66382A;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.selected-tag {
+  color: #39211B;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #E2C7A1;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .session-tag {
+    padding: 20px;
+  }
+  
+  .tag-options {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .tag-option {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+  
+  .custom-tag-input {
+    flex-direction: column;
+  }
+} 

@@ -1,0 +1,45 @@
+FOCUS BOOSTER - CREDITS
+========================
+
+1. AMBIENT SOUND FILES
+Source: Murmurs
+Creator: GoDanielGo
+License: MIT License
+Credit Example: Ambient sounds provided by GoDanielGo's Murmurs project (GitHub) via jsDelivr CDN.
+URL: https://github.com/GoDanielGo/murmurs
+
+2. ICONS
+Source: React Icons
+Creator: Various contributors
+License: MIT License
+Credit Example: Icons provided by React Icons library.
+
+3. FONTS
+Source: Google Fonts
+- Inter (Sans-serif)
+- Poppins (Display)
+License: Open Font License
+Credit Example: Typography provided by Google Fonts.
+
+4. QUOTE API
+Source: Quotable API
+Creator: Luke Peavey
+License: MIT License
+Credit Example: Motivational quotes provided by Quotable API.
+
+5. DEVELOPMENT FRAMEWORK
+Source: React
+Creator: Meta (Facebook)
+License: MIT License
+Credit Example: Built with React framework.
+
+6. STYLING
+Source: Custom CSS
+Creator: Custom implementation
+License: MIT License
+Credit Example: Custom styling and design implementation.
+
+==========================================
+All components are used in accordance with their respective licenses.
+This project is built for educational and productivity purposes.
+========================================== 

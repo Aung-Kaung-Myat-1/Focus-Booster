@@ -1,0 +1,203 @@
+.focus-timer {
+  background: var(--card-background, rgba(226, 199, 161, 0.9));
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(57, 33, 27, 0.15);
+  border: 2px solid var(--primary-color, #724817);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  min-height: 450px;
+}
+
+.timer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--primary-color, #724817);
+  padding-bottom: 15px;
+}
+
+.timer-header h2 {
+  color: var(--text-color, #39211B);
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
+}
+
+.timer-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.timer-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.current-task,
+.current-tag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  border: 1px solid var(--primary-color, #724817);
+  transition: all 0.3s ease;
+}
+
+.current-task {
+  background: rgba(96, 105, 65, 0.2);
+  border-color: var(--accent-color, #606941);
+}
+
+.current-tag {
+  background: rgba(114, 72, 23, 0.2);
+  border-color: var(--primary-color, #724817);
+}
+
+.task-label,
+.tag-label {
+  color: var(--text-color, #66382A);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.task-text,
+.tag-text {
+  color: var(--text-color, #39211B);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.3s ease;
+}
+
+/* Ensure the text sits right after the colon (avoid global flex styles from TodoList) */
+.current-task .task-text,
+.current-tag .tag-text {
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.timer-display {
+  margin-bottom: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: var(--text-color, #66382A);
+  font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Courier New', monospace;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  transition: color 0.3s ease;
+}
+
+.session-info {
+  color: var(--accent-color, #606941);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+  font-family: 'Inter', sans-serif;
+  min-width: 100px;
+}
+
+.btn-start {
+  background: var(--accent-color, #606941);
+  color: var(--card-background, #E2C7A1);
+}
+
+.btn-start:hover {
+  background: var(--secondary-color, #4A7C59);
+  transform: translateY(-2px);
+}
+
+.btn-pause {
+  background: var(--primary-color, #724817);
+  color: var(--card-background, #E2C7A1);
+}
+
+.btn-pause:hover {
+  background: var(--secondary-color, #66382A);
+  transform: translateY(-2px);
+}
+
+.btn-reset {
+  background: var(--accent-color, #606941);
+  color: var(--card-background, #E2C7A1);
+}
+
+.btn-reset:hover {
+  background: var(--secondary-color, #4A7C59);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .focus-timer {
+    padding: 20px;
+  }
+  
+  .time {
+    font-size: 3rem;
+  }
+  
+  .timer-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .current-task,
+  .current-tag {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+} 

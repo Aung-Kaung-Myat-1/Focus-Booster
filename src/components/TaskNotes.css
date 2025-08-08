@@ -1,0 +1,159 @@
+.task-notes {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+  position: relative;
+}
+
+.btn-add-note,
+.btn-edit-note {
+  background: var(--primary-color, #724817);
+  border: 1px solid var(--primary-color, #724817);
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.btn-add-note:hover,
+.btn-edit-note:hover {
+  background: var(--accent-color, #606941);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(96, 105, 65, 0.3);
+}
+
+/* Zephyr Song theme override */
+[data-theme="zephyr-song"] .btn-add-note,
+[data-theme="zephyr-song"] .btn-edit-note {
+  color: #666;
+}
+
+[data-theme="zephyr-song"] .btn-add-note:hover,
+[data-theme="zephyr-song"] .btn-edit-note:hover {
+  color: #666;
+}
+
+.notes-content {
+  margin-top: 12px;
+  padding: 16px;
+  background: var(--card-background, rgba(255, 255, 255, 0.4));
+  border-radius: 8px;
+  border: 1px solid var(--primary-color, #724817);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.note-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--primary-color, #724817);
+  border-radius: 8px;
+  background: var(--card-background, #E2C7A1);
+  color: var(--text-color, #39211B);
+  font-size: 0.9rem;
+  font-family: 'Outfit', sans-serif;
+  resize: vertical;
+  min-height: 60px;
+  transition: all 0.3s ease;
+  line-height: 1.4;
+}
+
+.note-textarea:focus {
+  outline: none;
+  border-color: var(--accent-color, #606941);
+  box-shadow: 0 0 0 3px rgba(96, 105, 65, 0.2);
+}
+
+.note-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn-save-note,
+.btn-cancel-note {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-save-note {
+  background: var(--accent-color, #606941);
+  color: var(--card-background, #E2C7A1);
+}
+
+.btn-save-note:hover {
+  background: var(--primary-color, #724817);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(114, 72, 23, 0.3);
+}
+
+.btn-cancel-note {
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--text-color, #39211B);
+  border: 1px solid var(--secondary-color, #66382A);
+}
+
+.btn-cancel-note:hover {
+  background: var(--secondary-color, #66382A);
+  color: var(--card-background, #E2C7A1);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(102, 56, 42, 0.3);
+}
+
+.note-display {
+  margin-top: 6px;
+  padding: 8px 12px;
+  background: var(--card-background, rgba(255, 255, 255, 0.3));
+  border-radius: 6px;
+  border-left: 3px solid var(--accent-color, #606941);
+}
+
+.note-text {
+  color: var(--text-color, #39211B);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  white-space: pre-wrap;
+  transition: color 0.3s ease;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .note-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .btn-save-note,
+  .btn-cancel-note {
+    justify-content: center;
+  }
+} 
