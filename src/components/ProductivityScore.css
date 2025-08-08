@@ -9,6 +9,8 @@
   flex-direction: column;
   transition: all 0.3s ease;
   min-height: 450px;
+  overflow: hidden;
+  position: relative;
 }
 
 .score-header {
@@ -319,7 +321,7 @@
 .score-tips {
   border-top: 1px solid var(--primary-color, #724817);
   padding-top: 20px;
-  margin-top: auto;
+  margin-top: 20px;
   transition: all 0.3s ease;
 }
 
