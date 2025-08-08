@@ -146,7 +146,10 @@ function App() {
     <div className="App">
 
       <header className="App-header">
-        <h1>Welcome to Focus Booster!</h1>
+        <div className="header-content">
+          <h1>Welcome to Focus Booster!</h1>
+          <div className="author-name">Aung Kaung Myat</div>
+        </div>
         <div className="app-container">
           <AmbientSoundPlayer onThemeChange={handleThemeChange} />
           <DailyGoal onGoalComplete={handleGoalComplete} />

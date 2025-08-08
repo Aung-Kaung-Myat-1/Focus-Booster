@@ -27,9 +27,30 @@ body {
   transition: all 0.3s ease;
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.author-name {
+  color: var(--secondary-color, #66382A);
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.author-name:hover {
+  opacity: 1;
+  color: var(--primary-color, #724817);
+}
+
 .App-header h1 {
   color: var(--text-color, #39211B);
-  margin-bottom: 30px;
+  margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 0.02em;
