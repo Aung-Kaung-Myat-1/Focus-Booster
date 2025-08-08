@@ -168,14 +168,36 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .author-name {
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 768px) {
   .App-header {
     padding: 20px;
     margin: 10px;
   }
   
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
   .App-header h1 {
     font-size: 2rem;
+  }
+  
+  .author-name {
+    font-size: 0.9rem;
   }
   
   .app-actions {
