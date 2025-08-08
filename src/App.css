@@ -94,11 +94,6 @@ body {
   height: 100%;
 }
 
-/* Make Productivity Score more compact */
-.timer-productivity-row .productivity-score {
-  min-height: 280px;
-}
-
 .session-column {
   display: flex;
   flex-direction: column;
