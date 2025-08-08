@@ -29,12 +29,16 @@ body {
 
 .header-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .author-name {
+  position: absolute;
+  top: 0;
+  right: 0;
   color: var(--secondary-color, #66382A);
   font-family: 'Exo 2', sans-serif;
   font-size: 1rem;
