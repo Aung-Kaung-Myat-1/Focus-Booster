@@ -28,20 +28,17 @@ body {
 }
 
 .header-content {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   margin-bottom: 30px;
-  position: relative;
+  gap: 20px;
   min-height: 60px;
-  padding: 0 120px;
 }
 
 .author-name {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  grid-column: 3;
+  justify-self: end;
   color: var(--secondary-color, #66382A);
   font-family: 'Exo 2', sans-serif;
   font-size: 1rem;
@@ -57,6 +54,8 @@ body {
 }
 
 .App-header h1 {
+  grid-column: 2;
+  justify-self: center;
   color: var(--text-color, #39211B);
   margin: 0;
   font-size: 2.5rem;
