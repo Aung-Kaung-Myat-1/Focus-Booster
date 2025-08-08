@@ -76,7 +76,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  align-items: stretch; /* Changed to stretch for equal heights */
+  align-items: stretch;
 }
 
 /* Second row: Todo List + Session Tag */
@@ -84,7 +84,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  align-items: stretch; /* Changed to stretch for equal heights */
+  align-items: stretch;
+}
+
+/* Ensure all cards have consistent height */
+.timer-productivity-row > *,
+.todo-session-row > * {
+  min-height: 500px;
+  height: 100%;
 }
 
 .session-column {
