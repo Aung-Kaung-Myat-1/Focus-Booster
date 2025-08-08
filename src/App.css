@@ -90,7 +90,7 @@ body {
 /* Ensure all cards have consistent height */
 .timer-productivity-row > *,
 .todo-session-row > * {
-  min-height: 500px;
+  min-height: 350px;
   height: 100%;
 }
 

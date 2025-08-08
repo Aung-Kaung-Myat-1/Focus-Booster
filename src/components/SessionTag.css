@@ -5,7 +5,7 @@
   box-shadow: 0 5px 15px rgba(57, 33, 27, 0.15);
   border: 2px solid var(--primary-color, #724817);
   transition: all 0.3s ease;
-  min-height: 500px;
+  min-height: 350px;
 }
 
 .session-tag h3 {
